@@ -34,17 +34,17 @@ export default async (request: Request, context: Context) => {
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Google PaLM API proxy on Netlify Edge</title>
+  <title>GoogleGemini代理--lika</title>
 </head>
 <body>
-  <h1 id="google-palm-api-proxy-on-netlify-edge">Google PaLM API proxy on Netlify Edge</h1>
-  <p>Tips: This project uses a reverse proxy to solve problems such as location restrictions in Google APIs. </p>
-  <p>If you have any of the following requirements, you may need the support of this project.</p>
+  <h1 id="google-palm-api-proxy-on-netlify-edge">Google代理--lika</h1>
+  <p>Tips: 提示：本项目使用反向代理来解决 Google API 中的位置限制等问题。 </p>
+  <p>如果您有以下任何要求，您可能需要此项目的支持。</p>
   <ol>
-  <li>When you see the error message &quot;User location is not supported for the API use&quot; when calling the Google PaLM API</li>
-  <li>You want to customize the Google PaLM API</li>
+  <li>当您在调用 Google API 时看到错误消息“API 使用不支持用户位置”时</li>
+  <li>您想要自定义 Google API</li>
   </ol>
-  <p>For technical discussions, please visit <a href="https://simonmy.com/posts/使用netlify反向代理google-palm-api.html">https://simonmy.com/posts/使用netlify反向代理google-palm-api.html</a></p>
+  <p>该项目免费向所有人提供，本人Gmail： <a href="./">ellyminor1291981utg@gmail.com</a></p>
 </body>
 </html>
     `
