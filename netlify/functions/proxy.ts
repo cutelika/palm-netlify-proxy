@@ -42,7 +42,7 @@ export default async (request: Request, context: Context) => {
   <p>如果您有以下任何要求，您可能需要此项目的支持。</p>
   <ol>
   <li>当您在调用 Google API 时看到错误消息“API 使用不支持用户位置”时</li>
-  <li>您想要自定义 Google API</li>
+  <li>您想要自定义 Google API时</li>
   </ol>
   <p>该项目免费向所有人提供，本人Gmail： <a href="./">ellyminor1291981utg@gmail.com</a></p>
 </body>
