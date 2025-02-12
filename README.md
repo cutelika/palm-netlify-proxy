@@ -1,15 +1,15 @@
 # palm-netlify-proxy
 
-Google PaLM API proxy on Netlify Edge
+GOOGLEAPI代理
 
 
-## Deploy
+## 部署
 
-### Deploy With Netlify
+### 在Netlify上部署
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/antergone/palm-netlify-proxy)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cutelika/palm-netlify-proxy)
 
 
-## Discussion
+## 技术支持
+Gmail：ellyminor1291981utg@gmail.com
 
-Please Visit Simon's Blog. https://simonmy.com/posts/使用netlify反向代理google-palm-api.html
