@@ -31,22 +31,107 @@ export default async (request: Request, context: Context) => {
   if(pathname === "/") {
     let blank_html = `
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>GoogleGemini代理--lika</title>
+    <meta charset="UTF-8">
+    <title>GoogleAPI代理</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url('img/1.jpg') no-repeat center/cover;
+            font-family: 'Microsoft YaHei', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(3px);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffb6c1;
+            box-shadow: 0 0 20px rgba(255,182,193,0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        .avatar:hover {
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        .name {
+            color: #ff69b4;
+            font-size: 24px;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .link-item {
+            padding: 10px 20px;
+            background: rgba(255, 182, 193, 0.8);
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .link-item:hover {
+            background: #ff69b4;
+            transform: translateY(-3px);
+        }
+
+        #music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-  <h1 id="google-palm-api-proxy-on-netlify-edge">Google代理--lika</h1>
-  <p>Tips: 提示：本项目使用反向代理来解决 Google API 中的位置限制等问题。 </p>
-  <p>如果您有以下任何要求，您可能需要此项目的支持。</p>
-  <ol>
-  <li>当您在调用 Google API 时看到错误消息“API 使用不支持用户位置”时</li>
-  <li>您想要自定义 Google API时</li>
-  </ol>
-  <p>该项目免费向所有人提供，本人Gmail： <a href="./">ellyminor1291981utg@gmail.com</a></p>
-</body>
+    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=2976598430&spec=640" alt="头像" class="avatar" id="qqAvatar">
+    <h1 class="name">Lika</h1>
+    <div class="links">
+        <a href="https://github.com/cutelika/palm-netlify-proxy" class="link-item">项目地址</a>
+        <a href="https://gitee.com/ds_qi/lika_proxy/" class="link-item">国内地址</a>
+    </div>
+    <audio id="music-player" controls autoplay loop>
+        <source src="//www.wgkj.ltd/music/crn.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+    </audio>
+    <script>
+        // QQ头像自动更新
+        function updateQQAvatar(qq) {
+            const avatar = document.getElementById('qqAvatar');
+            avatar.src = `https://q.qlogo.cn/headimg_dl?dst_uin=${qq}&spec=640`;
+        }
+
+        // 请在此处填入你的QQ号
+        updateQQAvatar('746882276');
+
+        // 音乐播放器控制
+        const musicPlayer = document.getElementById('music-player');
+        musicPlayer.volume = 0.3; // 设置音量
+        
+        // 页面入场动画
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+            document.body.style.transition = 'opacity 1s';
+            document.body.style.opacity = 1;
+        }, 100);
+    </script>
+	</body>
 </html>
+
     `
     return new Response(blank_html, {
       headers: {
