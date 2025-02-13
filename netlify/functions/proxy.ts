@@ -39,7 +39,7 @@ export default async (request: Request, context: Context) => {
         body {
             margin: 0;
             height: 100vh;
-            background: url('img/1.jpg') no-repeat center/cover;
+            background: url('1.jpg') no-repeat center/cover;
             font-family: 'Microsoft YaHei', sans-serif;
             display: flex;
             flex-direction: column;
