@@ -1,4 +1,4 @@
-# palm-netlify-proxy
+# Google通过Netlify代理项目
 
 GOOGLEAPI代理
 
